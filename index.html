@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Find the best car rental deals & cheap car hire prices with no compromise on quality. Book great value rental cars now in 100’s of locations when renting a car with Imperial Car Rental.">
+        <link rel="icon" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/glider-js/glider.min.css" />
+        <link rel="stylesheet" href="node_modules/flatpickr/dist/flatpickr.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "AutoRental",
+              "name": "Imperial Car Rental",
+              "image": "https://designs.pragmatikadev.com/assets/images/tower.webp",
+              "@id": "https://designs.pragmatikadev.com", 
+              "url": "https://designs.pragmatikadev.com/index.html",
+              "telephone": "+30 211 19 85 264",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Rental St.",  // add actual street address here
+                "addressLocality": "Ankara", 
+                "postalCode": "12345",  
+                "addressCountry": "TR" 
+              }
+            }
+            </script>
+            
+        <title>Home | Imperial Car Rental</title>
+    </head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="assets/images/logo.webp" loading="lazy" alt="logo"></a>
+            <div class="navigation">
+                <a class="call tab_none" href="tel:2111985264">
+                    <img src="assets/images/call-icon.svg" loading="lazy" alt="call-icon">
+                    <b class="big">
+                        <span class="small">Call Us to Book Now</span>
+                        <span class="tel_no">+30 211 19 85 264</span>
+                    </b>
+                </a>
+                <div class="booking dropdown tab_none">
+                    <p class="book-drop dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Booking <img src="assets/images/chev-down.svg" alt="down-icon"></p>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form>
+                                <div class="form-group">
+                                    <label for="booking-number">Booking Number: *</label>
+                                    <input type="text" class="form-control" id="booking-number" placeholder="GR-543763">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sirname">Your Surname: *</label>
+                                    <input type="text" class="form-control" id="sirname" placeholder="Papadopoulos">
+                                </div>
+                                <input type="submit" class="form-control btn" value="FIND BOOKING">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user_profile dropdown">
+                    <a href="#" class="user nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/images/user.svg" alt="user-icon"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="currency dropdown">
+                    <a href="#" class="nav-link dropdown-toggle euro"  role="button" data-bs-toggle="dropdown" aria-expanded="false"> € EUR</a>
+                    <ul class="dropdown-menu currency_menu mobile_menu">
+                        <li><a class="dropdown-item" href="#">$ USD</a></li>
+                        <li><a class="dropdown-item" href="#">£ GBP</a></li>
+                        <li><a class="dropdown-item" href="#">₹ INR</a></li>
+                        <li><a class="dropdown-item" href="#">¥ JPY</a></li>
+                    </ul>
+                </div>
+                <ul class="list-btns">
+                    <li class="language dropdown">
+                        <a href="#" class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="active_lang" src="assets/images/red-language.svg" alt="language"><img class="non_active_lang" src="assets/images/language.svg" alt="language"> English</a>
+                        <ul class="dropdown-menu language_menu mobile_menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Ελληνικά</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                            <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#">Nederlands</a></li>
+                            <li><a class="dropdown-item" href="#">Русский</a></li>
+                            <li><a class="dropdown-item" href="#">Polski</a></li>
+                            <li><a class="dropdown-item" href="#">Svensk</a></li>
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Română</a></li>
+                            <li><a class="dropdown-item" href="#">Čeština</a></li>
+                            <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                        </ul>
+                    </li>
+                    <li class="toggle-menu-btn dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="active_menu" src="assets/images/cross-icon.png" loading="lazy" alt="cross-icon"><img class="noactive_menu" src="assets/images/toggle-menu.webp" loading="lazy" alt="toggle-menu">
+                        </a>
+                        <ul class="dropdown-menu mobile_menu">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Company</a></li>
+                            <li><a class="dropdown-item" href="#">Royalty Card</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li class="desktop_none">
+                                <a class="call" href="tel:2111985264">
+                                    <img src="assets/images/call-icon.svg" loading="lazy" alt="call-icon">
+                                    <b class="big">
+                                        <span class="small">Call to Book Now from Greece</span>
+                                        <span class="tel_no">+30 211 19 85 264</span>
+                                    </b>
+                                </a>
+                                <a class="call" href="tel:2031296243">
+                                    <img src="assets/images/call-icon.svg" loading="lazy" alt="call-icon">
+                                    <b class="big">
+                                        <span class="small">Call to Book Now from the UK</span>
+                                        <span class="tel_no">+44 20 3129 6243</span> 
+                                    </b>
+                                </a>
+                                <a class="call" href="mailto:bookings@imperial-car-rental.com">
+                                    <img src="assets/images/mail-iocn.svg" loading="lazy" alt="mail-iocn">
+                                    <b class="big">
+                                        <span class="small">Contact Us</span>
+                                        <span class="tel_no">bookings@imperial-car-rental.com</span>
+                                    </b>
+                                </a>
+                            </li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-----------------------header end------------------->
+    <section class="banner">
+        <div class="container">
+            <div class="left-side">
+                <h1 class="mobile_none">Imperial Car Rental</h1>
+                <p class="white">Find the best car rental deals & cheap car hire prices with no compromise on quality. Book great value rental cars now in 100’s of locations when renting a car with Imperial Car Rental.Find the best car rental deals & cheap car hire prices with no compromise on quality. Book great value rental cars now in 100’s of locations when renting a car with Imperial Car Rental Book great value rental cars now in 100’s of locations when renting a car with Imperial Car Rental</p>
+            </div>
+            <div class="right-side">
+                <form action="#" class="booking_form">
+                    <div class="form-group">
+                        <label for="going_location">COLLECT FROM</label>
+                        <div class="select_location going_location">
+                            <div class="dropdown">
+                                <div class="btn dropdown-toggle" type="button">
+                                    <img src="assets/images/locat.png" loading="lazy" alt="location">
+                                    <input type="text" id="going_location" name="going-location" placeholder="Choose Location . . ." autocomplete="off">
+                                    <img src="assets/images/circle-star.png" loading="lazy" alt="start" class="active_cross">
+                                    <img src="assets/images/blue-cross.svg" loading="lazy" alt="cross-icon" class="noactive_cross">
+                                </div>
+                                <div class="dropdowns going_list" id="dropdowns-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="locationcheck">
+                        <label for="locationcheck">Choose a different return location</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="select_location return_location">
+                            <label for="return_location">COLLECT FROM</label>
+                            <div class="dropdown">
+                                <div class="btn dropdown-toggle" type="button">
+                                    <img src="assets/images/locat.png" loading="lazy" alt="location">
+                                    <input type="text" id="return_location" name="return-location" placeholder="Choose Location . . ." autocomplete="off">
+                                    <img src="assets/images/circle-star.png" loading="lazy" alt="star" class="active_cross">
+                                    <img src="assets/images/blue-cross.svg" loading="lazy" alt="cross" class="noactive_cross">
+                                </div>
+                                <div class="dropdowns return_list" id="dropdowns-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <div class="date-time-picker form-group">
+                            <label for="pickup-date">DATE FROM</label>
+                            <div class="date">
+                                <input class="flatpickr flatpickr-input form-control" type="text" id="pickup-date" placeholder="08 Mar 24 | 10:00" data-id="datetime" readonly="readonly">
+                            </div>
+                        </div>
+                        <img src="assets/images/arrow-right.svg" class="right-arrow" loading="lazy" alt="arrow-right">
+                        <div class="date-time-picker form-group">
+                            <label for="drop-date">DATE TO</label>
+                            <div class="date">
+                                <input class="flatpickr flatpickr-input form-control" type="text" id="drop-date" placeholder="08 Mar 24 | 10:00" data-id="datetime" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="aged-check" id="gridCheck">
+                        <label for="aged-check">Driver aged over 21 <span class="information"><img src="assets/images/information.svg" loading="lazy" alt="information"><span class="information-cont">If you are under 21 or over 70, we need your date of birth in order to show you the most appropriate selection of vehicles.</span></span></label>
+                    </div>
+                    <input type="submit" class="form-control btn" value="FIND CARS">
+                </form>
+            </div>
+            <div class="left-side desktop_none">
+                <h1>Imperial Car Rental</h1>
+            </div>
+        </div>
+    </section>
+    <section class="rental-cars">
+        <div class="continer-fluid">
+            <h3 class="border-line">Rental Cars</h3>
+            <h4>Popular Destinations</h4>
+        </div>
+        <div class="cars-slide">
+            <div class="glider-contain rental-slider blue_pagination">
+                <div class="glider rentalslider">
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rental-card">
+                            <div class="img-part">
+                                <img src="assets/images/slider-2.webp" loading="lazy" alt="slie-img">
+                                <span class="card-cate">Croatia</span>
+                                <h5 class="from">
+                                    From<span class="value">59<sup>€</sup></span>
+                                </h5>
+                                <a href="#" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-buttons">
+                    <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-1">Prev</button>
+                    <button role="button" aria-label="Next" class="glider-next" id="glider-next-1">Next</button>
+                </div>
+                <div id="dots1" role="tablist" class="dots slider_dots"></div>
+            </div>
+        </div>
+        <div class="book-from">
+            <div class="glider-contain month_slider">
+                <div class="glider monthslider">
+                    <div class="month_box">Jan <small>from</small>€40</div>
+                    <div class="month_box">Feb <small>from</small>€40</div>
+                    <div class="month_box">Mar <small>from</small>€40</div>
+                    <div class="month_box">Apr <small>from</small>€40</div>
+                    <div class="month_box">May <small>from</small>€40</div>
+                    <div class="month_box">Jun <small>from</small>€40</div>
+                    <div class="month_box">Jul <small>from</small>€40</div>
+                    <div class="month_box">Aug <small>from</small>€40</div>
+                    <div class="month_box">Sep <small>from</small>€40</div>
+                    <div class="month_box">Oct <small>from</small>€40</div>
+                    <div class="month_box">Nov <small>from</small>€40</div>
+                    <div class="month_box">Dec <small>from</small>€40</div>
+                </div>
+                <div class="owl-buttons">
+                    <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-2">Prev</button>
+                    <button role="button" aria-label="Next" class="glider-next" id="glider-next-2">Next</button>
+                </div>
+                <div id="dots2" role="tablist" class="dots slider_dots"></div>
+            </div>
+        </div>
+    </section>
+    <!-----------------section our guarantee------------------>
+    <section class="our-guarantees home_guarantees">
+        <div class="container">
+            <div class="top-part">
+                <div class="img-side">
+                    <img src="assets/images/tower.webp" class="big-image" loading="lazy" alt="tower-img">
+                </div>
+                <div class="right-part">
+                    <h2>Our Guarantees</h2>
+                    <h5>Almost every rent a car company promises brand new cars, the latest rental car types and the best car hire fleet. This is what you can expect from us, new vehicles and great car rental service, guaranteed!</h5>
+                </div>
+            </div>
+            <div class="bottom-part">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider guarantee-slider ">
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line">Car rental Athens, Greece At Good Prices</h6>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring part but what if you have an Hiring a car is the easy part but wha</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-3">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-3">Next</button>
+                    </div>
+                    <div id="dots3" role="tablist" class="dots slider_dots"></div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------section our guarantee------------------>
+    <section class="our-guarantees mobile_none home_guarantees">
+        <div class="container">
+            <div class="top-part">
+                <div class="img-side">
+                    <img src="assets/images/tower.webp" class="big-image" loading="lazy" alt="img">
+                </div>
+                <div class="right-part">
+                    <h2>Our Guarantees</h2>
+                    <h5>Almost every rent a car company promises brand new cars, the latest rental car types and the best car hire fleet. This is what you can expect from us, new vehicles and great car rental service, guaranteed!</h5>
+                </div>
+            </div>
+            <div class="bottom-part">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider guarantee-sliders">
+                        <div class="guar-card">
+                            <h6 class="border-line left">Ankara Rent a Car</h6>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line left">Ankara Rent a Car</h6>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                        <div class="guar-card">
+                            <h6 class="border-line left">Ankara Rent a Car</h6>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-4">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-4">Next</button>
+                    </div>
+                    <div id="dots4" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------heraklion car rental------------->
+    <section class="heraklion-car">
+        <div class="left">
+            <div class="slider-hera">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider heraklion-slider hera_slider1">
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an</p>
+                        </div>
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-5">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-5">Next</button>
+                    </div>
+                    <div id="dots5" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="image-hera">
+            <img src="assets/images/bridge.webp" loading="lazy" alt="bridge">
+        </div>
+    </section>
+    <section class="heraklion-car image-right-small mobile_none">
+        <div class="left">
+            <div class="slider-hera">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider heraklion-slider hera_slider2">
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-6">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-6">Next</button>
+                    </div>
+                    <div id="dots6" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="image-hera">
+            <img src="assets/images/bridge.webp" loading="lazy" alt="bridge">
+        </div>
+    </section>
+
+    <!---------heraklion car rental reverse------------->
+    <section class="heraklion-car reverse mobile_none">
+        <div class="left">
+            <div class="slider-hera"> 
+                <div class="glider-contain blue_pagination">
+                    <div class="glider heraklion-slider hera_slider3">
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an</p>
+                        </div>
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an accident or a breakdown or need further assistance? At Imperial, our 24/7 telephone centre will always be there to provide immediate support no matter what the situation!Hiring a car is the easy part but what if you have an Hiring a car is the easy part but what if you have an</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-7">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-7">Next</button>
+                    </div>
+                    <div id="dots7" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="image-hera">
+            <img src="assets/images/bridge.webp" loading="lazy" alt="bridge">
+        </div>
+    </section>
+    <section class="heraklion-car image-right-small reverse mobile_none">
+        <div class="left">
+            <div class="slider-hera">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider heraklion-slider hera_slider4">
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                        <div class="hera-cont">
+                            <h3 class="border-line left">Heraklion Car Rental</h3>
+                            <p>The historically rich Turkish capital is situated in the heartland of Turkey, right in the center of Anatolia. Ankara is the second largest city after Istanbul, boasting many ancient monuments and archaeological sites dating from different eras. Ankara has been inhabited by many ancient civilizations over the years, which resulted in the formation of its modern culture, which was significantly influenced by its riveting past. The history of the city starts from the 3rd century BC when Ankara was the ancient capital of the Celtic state of Galatia. But even before that, modern-day Ankara was inhabited by the Hittites, Hattians, and Lydians, among others. Around 25 BC, Ankara served as a Roman capital under the rule of Augustus of the Roman province of Galatia. In the early years of the Ottoman Empire, Ankara became the capital of the Anatolia Eyalet, i.e., a former administrative province of the Ottoman Empire. It is evident that Ankara has a rich historical past, although it is often sadly disregarded by visitors traveling to Turkey. Some of its most notable attractions and monuments include the impressive Ankara Castle, the Temple of Augustus and Rome, the mausoleum of Atatürk Anıtkabir, and the Roman Baths in Çankiri Caddesi. Apart from its main town and suburbs, Ankara makes a great starting point for exploring the surrounding inland regions, such as Alacahöyük and Çorum. So, the most convenient way to discover Ankara without relying on bus and train timetables is by car. Our large fleet of vehicles in Ankara is composed of well-maintained cars such as SUVs, Jeeps, sedans, hatchbacks, and minivans, among others. By choosing the car that suits you best, you also choose unlimited flexibility, affordable prices, and 24/7 guaranteed safety. Try our Imperial services today!</p>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-8">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-8">Next</button>
+                    </div>
+                    <div id="dots8" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="image-hera">
+            <img src="assets/images/bridge.webp" loading="lazy" alt="bridge">
+        </div>
+    </section>
+
+    <!--------------gallery css------------->
+    <section class="gallery_sec">
+        <div class="container">
+            <h3 class="border-line left">Our Top Destinations</h3>
+            <p>Daily Car Rental Prices</p>
+            <div class="gallery_sliders">
+                <!------------first slider ---------->
+                <div class="glider-contain blue_pagination">
+                    <div class="glider gallery-5slide">
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-1.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-2.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-3.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-4.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Gran Canaria</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-5.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Heraklion</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-9">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-9">Next</button>
+                    </div>
+                    <div id="dots9" role="tablist" class="dots slider_dots"></div>
+                </div>
+
+                <!------------sec slider ---------->
+                <div class="glider-contain blue_pagination">
+                    <div class="glider gallery-4slide">
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-1.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-2.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-3.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-4.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Gran Canaria</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-10">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-10">Next</button>
+                    </div>
+                    <div id="dots10" role="tablist" class="dots slider_dots"></div>
+                </div>
+
+                <!------------third slider ---------->
+                <div class="glider-contain blue_pagination">
+                    <div class="glider gallery-3slide">
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-1.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-2.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-3.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-11">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-11">Next</button>
+                    </div>
+                    <div id="dots11" role="tablist" class="dots slider_dots"></div>
+                </div>
+
+                <!------------four slider ---------->
+                <div class="glider-contain blue_pagination">
+                    <div class="glider gallery-2slide">
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-1.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                        <div class="gall_card">
+                            <a href="#"><img src="assets/images/destination-2.webp" loading="lazy" alt="destination"></a>
+                            <h4><a href="#">Istanbul</a></h4>
+                            <p>From <span> 39<sup>€</sup></span>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-12">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-12">Next</button>
+                    </div>
+                    <div id="dots12" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="most-popular mobile_none">
+        <div class="container">
+            <div class="six_cards">
+                <div class="mp_card">
+                    <a href="#" class="mp_img"><img src="assets/images/Thessaloniki-1.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <p class="">From<span> 39<sup>€</sup></span></p>
+                </div>
+                <div class="mp_card">
+                    <a href="#" class="mp_img"><img src="assets/images/Thessaloniki-2.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <h6 class="">Most Popular</h6>
+                </div>
+                <div class="mp_card">
+                    <a href="#" class="mp_img"><img src="assets/images/Thessaloniki-3.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <h6 class="">Most Popular</h6>
+                </div>
+                <div class="mp_card tab_none">
+                    <a href="#" class="mp_img"><img src="assets/images/Thessaloniki-4.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <p class="">From<span> 39<sup>€</sup></span></p>
+                </div>
+                <div class="mp_card tab_none">
+                    <a href="#" class="mp_img"><img src="assets/images/Thessaloniki-5.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <h6 class="">Most Popular</h6>
+                </div>
+                <div class="mp_card tab_none">
+                    <a href="#" class="mp_img"><img src="assets/images/destination-2.webp" loading="lazy" alt="Thessaloniki"></a>
+                    <h4><a href="#">Thessaloniki</a></h4>
+                    <h6 class="">Most Popular</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lets-go">
+        <div class="container">
+            <h3 class="border-line left">Let's Go Places Together</h3>
+            <p>Discover the latest offers and news and start planning your next trip with us.</p>
+            <div class="places-cards">
+                <div class="plcard place_cards">
+                    <div class="glider-contain blue_pagination">
+                        <div class="glider one_slidee">
+                            <div class="plcard">
+                                <div class="img-card">
+                                    <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                                    <a href="#"><img src="assets/images/lets-go-4.webp" loading="lazy" alt="icon"></a>
+                                </div>
+                                <div class="cont">
+                                    <h4><a href="#">Thessaloniki</a></h4>
+                                    <p>We look forward to your arrival and we are more than ready to service you with your Imperial Rental Car at your desired destination. Drive safely and enjoy the ride! Imperial Car Rentals is one of the fastest growing rent a car companies in all of Europe, serving thousands of locations including all major airports, ports & city centers! </p>
+                                    <a href="#" class="explore-offer">Explore this offer</a>
+                                </div>
+                            </div>
+                            <div class="plcard">
+                                <div class="img-card">
+                                    <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                                    <a href="#"><img src="assets/images/lets-go-4.webp" loading="lazy" alt="go-icon"></a>
+                                </div>
+                                <div class="cont">
+                                    <h4><a href="#">Thessaloniki</a></h4>
+                                    <p>We look forward to your arrival and we are more than ready to service you with your Imperial Rental Car at your desired destination. Drive safely and enjoy the ride! Imperial Car Rentals is one of the fastest growing rent a car companies in all of Europe, serving thousands of locations including all major airports, ports & city centers! </p>
+                                    <a href="#" class="explore-offer">Explore this offer</a>
+                                </div>
+                            </div>
+                            <div class="plcard">
+                                <div class="img-card">
+                                    <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                                    <a href="#"><img src="assets/images/lets-go-4.webp" loading="lazy" alt="img"></a>
+                                </div>
+                                <div class="cont">
+                                    <h4><a href="#">Thessaloniki</a></h4>
+                                    <p>We look forward to your arrival and we are more than ready to service you with your Imperial Rental Car at your desired destination. Drive safely and enjoy the ride! Imperial Car Rentals is one of the fastest growing rent a car companies in all of Europe, serving thousands of locations including all major airports, ports & city centers! </p>
+                                    <a href="#" class="explore-offer">Explore this offer</a>
+                                </div>
+                            </div>
+                            <div class="plcard">
+                                <div class="img-card">
+                                    <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                                    <a href="#"><img src="assets/images/lets-go-4.webp" loading="lazy" alt="img"></a>
+                                </div>
+                                <div class="cont">
+                                    <h4><a href="#">Thessaloniki</a></h4>
+                                    <p>We look forward to your arrival and we are more than ready to service you with your Imperial Rental Car at your desired destination. Drive safely and enjoy the ride! Imperial Car Rentals is one of the fastest growing rent a car companies in all of Europe, serving thousands of locations including all major airports, ports & city centers! </p>
+                                    <a href="#" class="explore-offer">Explore this offer</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-buttons">
+                            <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-13">Prev</button>
+                            <button role="button" aria-label="Next" class="glider-next" id="glider-next-13">Next</button>
+                        </div>
+                        <div id="dots13" role="tablist" class="dots slider_dots"></div>
+                    </div>
+                </div>
+                <div class="small-cards mobile_none">
+                    <div class="plcard">
+                        <div class="img-card">
+                            <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                            <a href="#"><img src="assets/images/lets-go-3.webp" loading="lazy" alt="img"></a>
+                        </div>
+                        <div class="cont">
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>We look forward to your arrival and we are ready to service you.</p>
+                            <a href="#" class="explore-offer">Explore this offer</a>
+                        </div>
+                    </div>
+                    <div class="plcard">
+                        <div class="img-card">
+                            <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                            <a href="#"><img src="assets/images/lets-go-2.webp" loading="lazy" alt="img"></a>
+                        </div>
+                        <div class="cont">
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>We look forward to your arrival and we are ready to service you.</p>
+                            <a href="#" class="explore-offer">Explore this offer</a>
+                        </div>
+                    </div>
+                    <div class="plcard">
+                        <div class="img-card">
+                            <h6 class="">From<span> 39<sup>€</sup></span></h6>
+                            <a href="#"><img src="assets/images/lets-go-1.webp" loading="lazy" alt="img"></a>
+                        </div>
+                        <div class="cont">
+                            <h4><a href="#">Thessaloniki</a></h4>
+                            <p>We look forward to your arrival and we are ready to service you.</p>
+                            <a href="#" class="explore-offer">Explore this offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="icon-cards">
+        <div class="container">
+            <div class="car_cards">
+                <div class="glider-contain blue_pagination">
+                    <div class="glider home_car_cards">
+                        <div class="crd">
+                            <img src="assets/images/icons%20(3).png" loading="lazy" alt="icon">
+                            <h3>No Hidden Fees</h3>
+                        </div>
+                        <div class="crd">
+                            <img src="assets/images/icons%20(1).png" loading="lazy" alt="icon">
+                            <h3>Wide Range of Vehicles</h3>
+                        </div>
+                        <div class="crd">
+                            <img src="assets/images/icons%20(1).png" loading="lazy" alt="icon">
+                            <h3>24/7 Service</h3>
+                        </div>
+                        <div class="crd">
+                            <img src="assets/images/icons%20(2).png" loading="lazy" alt="icon">
+                            <h3>24h Roadside Assistance</h3>
+                        </div>
+                    </div>
+                    <div class="owl-buttons">
+                        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-14">Prev</button>
+                        <button role="button" aria-label="Next" class="glider-next" id="glider-next-14">Next</button>
+                    </div>
+                    <div id="dots14" role="tablist" class="dots slider_dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------footer start------------------->
+    
+    <script type="text/javascript" src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/glider-js/glider.min.js"></script>
+    <script type="text/javascript" src="node_modules/flatpickr/dist/flatpickr.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>

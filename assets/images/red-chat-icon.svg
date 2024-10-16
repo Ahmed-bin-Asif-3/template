@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 67" width="71" height="67">
+	<title>red-chat-icon-svg</title>
+	<defs>
+		<image  width="30" height="8" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAIBAMAAAAckVIXAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAApyAgqx8hqx8hqx8hqh8irB8gqh4grB8iqx8gZhqgPAAAAAp0Uk5TACC/7/+vr7Cvv7/L0s0AAABsSURBVHicY2RUUjr9gUFISXY9A4jJKGzI8PY8o7HA/7MfQEzGlAcM//ax2TEw3HkAYjK6MDD838viwMDw5gKIyWgiwMCwh9mRgeHPARCTUUWBgXknkxMDg84EEBPDPMbmrdc/MEho++UzgJgALD4omyKRxZoAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		.s0 { fill: none;stroke: #ab1f21;stroke-width: 5 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m8.1 49.1l0.1-0.9-0.5-0.8c-3.4-4.7-5.2-10.1-5.2-15.7 0-15.8 14.5-29.2 33-29.2 18.5 0 33 13.4 33 29.2 0 15.9-14.5 29.3-33 29.3-4.7 0-9.3-0.9-13.6-2.6l-1.1-0.5-1 0.6c-5.2 3-11.7 4.6-15.6 5.4q1.1-1.9 1.9-4.3c1-3 1.7-6.5 2-10.5z"/>
+	<use id="Background" href="#img1" x="20" y="29"/>
+</svg>
